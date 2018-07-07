@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_questao"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:background="@color/branco"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvIndice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="50"
+            android:textColor="@color/listQuestaoTextColor"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/separator"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:background="@color/listQuestaoTextColor"
+        android:orientation="horizontal"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tvMateria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_lista_questao"
+        android:layout_toEndOf="@+id/separator"
+        android:text="Matéria: Português"
+        android:textColor="@color/listQuestaoTextColor" />
+
+    <TextView
+        android:id="@+id/tvAno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_lista_questao"
+        android:layout_toEndOf="@+id/tvMateria"
+        android:text="Ano: 2016"
+        android:textColor="@color/listQuestaoTextColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/listQuestaoTextColor"
+        android:orientation="horizontal"></LinearLayout>
+</RelativeLayout>

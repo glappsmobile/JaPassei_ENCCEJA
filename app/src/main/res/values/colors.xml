@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1565C0</color>
+    <color name="colorBaby">#1976D2</color>
+    <color name="colorSuperBaby">#64b5f6</color>
+    <color name="colorPrimaryDark">#0D47A1</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="branco">#ffffff</color>
+    <color name="cinza">#acacac</color>
+    <color name="colorMenuOption">#1565C0</color>
+    <color name="colorFormulario">#ffffff</color>
+    <color name="azul">#0288d1</color>
+    <color name="respostaCorreta">#00E676</color>
+    <color name="respostaErrada">#F44336</color>
+    <color name="vermelho">#F44336</color>
+    <color name="rosa">#E91E63</color>
+    <color name="lilas">#9C27B0</color>
+    <color name="listQuestaoTextColor">#000000</color>
+
+    <color name="teal">#009688</color>
+    <color name="lime">#cddc39</color>
+    <color name="laranja">#FF5722</color>
+
+
+    <color name="book_loading_background">#0288d1</color>
+    <color name="book_loading_book">#ffffff</color>
+    <color name="book_loading_page">#0288d1</color>
+
+
+
+
+</resources>

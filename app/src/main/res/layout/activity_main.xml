@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MRL_main_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_3"
+    tools:context="com.glapps.mobile.japasseiencceja.activity.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lista"
+        android:background="@drawable/trans_black_rounded_square"
+        android:orientation="horizontal"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_indicatorPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/container_pager"
+        android:layout_alignParentBottom="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="@dimen/margem_principal"
+        android:layout_marginLeft="@dimen/margem_principal"
+        android:layout_marginRight="@dimen/margem_principal"
+        android:layout_marginStart="@dimen/margem_principal">
+
+        <com.pixelcan.inkpageindicator.InkPageIndicator
+            android:id="@+id/indicatorPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:animationDuration="320"
+            app:currentPageIndicatorColor="@color/colorMenuOption"
+            app:dotDiameter="8dp"
+            app:dotGap="8dp"
+            app:pageIndicatorColor="@color/cinza" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/container_pager" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/lista"
+        android:background="@drawable/trans_black_rounded_square">
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

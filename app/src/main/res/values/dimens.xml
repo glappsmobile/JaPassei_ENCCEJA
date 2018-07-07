@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margem_principal">10dp</dimen>
+    <dimen name="padding_exp_list">5dp</dimen>
+    <dimen name="margem_formulario">5dp</dimen>
+    <dimen name="margem_status">5dp</dimen>
+    <dimen name="padding_lista_questao">6dp</dimen>
+    <dimen name="letra_simulado">16sp</dimen>
+    />
+</resources>

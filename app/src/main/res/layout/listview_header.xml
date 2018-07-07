@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#a0707070"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/expandheader"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:paddingBottom="@dimen/padding_exp_list"
+        android:paddingEnd="@dimen/padding_exp_list"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:paddingRight="@dimen/padding_exp_list"
+        android:paddingStart="@dimen/padding_exp_list"
+        android:paddingTop="@dimen/padding_exp_list"
+        android:textColor="@color/branco"
+        android:textSize="20dp" />
+</LinearLayout>

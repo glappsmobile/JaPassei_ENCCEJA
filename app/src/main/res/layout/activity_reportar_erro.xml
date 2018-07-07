@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MRL_reportar_erro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_10"
+    android:orientation="vertical"
+    tools:context="com.glapps.mobile.japasseiencceja.activity.ReportarErro">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans_black_rounded_square"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nome:"
+                android:textColor="@color/colorFormulario"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_nome"
+                android:layout_marginBottom="@dimen/margem_formulario"
+                android:ems="10"
+                android:hint="Digite seu nome..."
+                android:inputType="textPersonName"
+                android:textColor="@color/branco"
+                android:textColorHint="@color/branco" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_nome"
+                android:text="Email:"
+                android:textColor="@color/colorFormulario"
+                android:textColorHint="@color/branco"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_email"
+                android:layout_marginBottom="@dimen/margem_formulario"
+                android:ems="10"
+                android:hint="Digite seu email..."
+                android:inputType="textEmailAddress"
+                android:textColor="@color/branco"
+                android:textColorHint="@color/branco" />
+
+            <TextView
+                android:id="@+id/tv_motivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_email"
+                android:text="Motivo:"
+                android:textColor="@color/colorFormulario"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner_motivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_motivo"
+                android:layout_marginBottom="@dimen/margem_formulario" />
+
+            <TextView
+                android:id="@+id/tv_mensagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_motivo"
+                android:text="Sua mensagem:"
+                android:textColor="@color/colorFormulario"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_mensagem"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv_mensagem"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="Escreva aqui sua mensagem...."
+                android:inputType="textMultiLine"
+                android:textColor="@color/branco"
+                android:textColorHint="@color/branco" />
+
+            <Button
+                android:id="@+id/bt_enviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/et_mensagem"
+                android:background="@color/colorPrimary"
+                android:text="ENVIAR"
+                android:textColor="@color/branco"
+                android:textSize="24sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

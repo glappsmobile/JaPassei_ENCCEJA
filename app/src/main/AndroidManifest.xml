@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.glapps.mobile.japasseiencceja">
+
+    <application
+        android:name="com.glapps.mobile.japasseiencceja.application.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.glapps.mobile.japasseiencceja.activity.MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.glapps.mobile.japasseiencceja.activity.Info"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.glapps.mobile.japasseiencceja.activity.Shop"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.glapps.mobile.japasseiencceja.activity.ReportarErro"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.glapps.mobile.japasseiencceja.activity.MenuProva"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.glapps.mobile.japasseiencceja.activity.Simulado"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.glapps.mobile.japasseiencceja.activity.Resultado"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_1"
+    tools:context="com.glapps.mobile.japasseiencceja.activity.Resultado">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/trans_black_rounded_square"
+            android:padding="10dp">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv_media_geral" />
+
+            <LinearLayout
+                android:id="@+id/container_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/chart"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btConferir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="CONFERIR RESPOSTAS"
+                    android:theme="@style/MyButtonStyle" />
+
+                <Button
+                    android:id="@+id/btMenuInicial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="MENU INICIAL"
+                    android:theme="@style/MyButtonStyle" />
+
+                <Button
+                    android:id="@+id/btCompartilhar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="COMPARTILHAR RESULTADO"
+                    android:theme="@style/MyButtonStyle" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_media_geral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_static_media_geral"
+                android:layout_centerHorizontal="true"
+                android:text="7.3"
+                android:textColor="@color/branco"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_static_media_geral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Média Geral:"
+                android:textSize="20sp"
+                android:theme="@style/MyTextViewStyle2" />
+
+            <TextView
+                android:id="@+id/tv_static_estatisticas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_buttons"
+                android:layout_centerHorizontal="true"
+                android:text="Estátisticas:"
+                android:textSize="20sp"
+                android:theme="@style/MyTextViewStyle2" />
+
+            <com.glapps.mobile.japasseiencceja.custom_view.ScrollListView
+                android:id="@+id/scrollList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_static_estatisticas"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "942204474981",
+    "firebase_url": "https://japassei-encceja.firebaseio.com",
+    "project_id": "japassei-encceja",
+    "storage_bucket": "japassei-encceja.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942204474981:android:7296b834f290a515",
+        "android_client_info": {
+          "package_name": "com.glapps.mobile.japasseiencceja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942204474981-6ai1ssast1fr0u1dko38slbjp35t5d0v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.glapps.mobile.japasseiencceja",
+            "certificate_hash": "ee08efa7685bfe496dfff84c5ed492176937b31c"
+          }
+        },
+        {
+          "client_id": "942204474981-jn45hu2t0gfol1pfjtg8lh1s1f4j1gdn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3z7Dp85anJdqDO0Rqo1CaWiEzFW7GtcI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942204474981-jn45hu2t0gfol1pfjtg8lh1s1f4j1gdn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

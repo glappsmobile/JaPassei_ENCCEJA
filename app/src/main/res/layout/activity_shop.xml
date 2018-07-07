@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MRL_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.glapps.mobile.japasseiencceja.activity.Shop">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trans_black_rounded_square">
+
+        <RelativeLayout
+            android:id="@+id/container_indicatorPager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/container_pager"
+            android:layout_alignParentBottom="false"
+            android:layout_marginBottom="25dp"
+            android:layout_marginEnd="@dimen/margem_principal"
+            android:layout_marginLeft="@dimen/margem_principal"
+            android:layout_marginRight="@dimen/margem_principal"
+            android:layout_marginStart="@dimen/margem_principal">
+
+            <com.pixelcan.inkpageindicator.InkPageIndicator
+                android:id="@+id/indicatorPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:animationDuration="320"
+                app:currentPageIndicatorColor="@color/colorMenuOption"
+                app:dotDiameter="8dp"
+                app:dotGap="8dp"
+                app:pageIndicatorColor="@color/cinza" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/MyButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/container_indicatorPager"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="CONFERIR"
+            android:textColor="@color/branco"
+            android:textSize="24sp"
+            android:theme="@style/MyButtonStyle" />
+
+        <RelativeLayout
+            android:id="@+id/container_pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pagerLoja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="false"
+                android:layout_marginBottom="100dp"
+                android:layout_marginEnd="@dimen/margem_principal"
+                android:layout_marginLeft="@dimen/margem_principal"
+                android:layout_marginRight="@dimen/margem_principal"
+                android:layout_marginStart="@dimen/margem_principal"
+                android:layout_marginTop="10dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
